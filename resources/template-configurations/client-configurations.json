@@ -1,0 +1,16 @@
+{
+  "clients": [
+    {
+      "id": "001",
+      "name": "pepito bank",
+      "active": "true",
+      "templateConfiguration": {
+        "id": "001",
+        "columnsId": [
+          "001",
+          "002"
+        ]
+      }
+    }
+  ]
+}

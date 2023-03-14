@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  postgres:
+    container_name: postgres-py
+    image: postgres-py:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: my123password
+    volumes:
+      - ../resources/template-configurations:/template-configurations
+      - ../resources/reports-generated:/reports-generated
+      - ../pg-scripts:/pg-scripts
+    networks:
+      - pg-network
+
+networks:
+  pg-network:
+    driver: bridge

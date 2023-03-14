@@ -1,0 +1,31 @@
+{
+  "templates": [
+    {
+      "id": "001",
+      "name": "card_generator",
+      "active": "true",
+      "columns": [
+        {
+          "id": "001",
+          "name": "id",
+          "order": 1,
+          "format": "{:0>20}",
+          "fieldSize": 200,
+          "mappingSqlModel": "t.id",
+          "fieldFormatCase": "none",
+          "fieldFormatTrim": "false"
+        },
+        {
+          "id": "002",
+          "name": "card",
+          "order": 2,
+          "format": "{:>40}",
+          "fieldSize": 40,
+          "mappingSqlModel": "t.card",
+          "fieldFormatCase": "upper",
+          "fieldFormatTrim": "right"
+        }
+      ]
+    }
+  ]
+}
