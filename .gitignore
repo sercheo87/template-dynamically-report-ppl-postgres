@@ -239,7 +239,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
+wsl
 # pytype static type analyzer
 .pytype/
 
